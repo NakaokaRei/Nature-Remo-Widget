@@ -12,11 +12,11 @@ import Alamofire
 
 struct Provider: IntentTimelineProvider {
     func placeholder(in context: Context) -> SimpleEntry {
-        SimpleEntry(date: Date(), configuration: ConfigurationIntent())
+        SimpleEntry(date: Date(), temp: 0.0, configuration: ConfigurationIntent())
     }
 
     func getSnapshot(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (SimpleEntry) -> ()) {
-        let entry = SimpleEntry(date: Date(), configuration: configuration)
+        let entry = SimpleEntry(date: Date(),temp: 0.0, configuration: configuration)
         completion(entry)
     }
 
@@ -24,20 +24,33 @@ struct Provider: IntentTimelineProvider {
         var entries: [SimpleEntry] = []
 
         // Generate a timeline consisting of five entries an hour apart, starting from the current date.
-        let currentDate = Date()
-        for hourOffset in 0 ..< 5 {
-            let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
-            let entry = SimpleEntry(date: entryDate, configuration: configuration)
+        request() { tempValue in
+            print(tempValue)
+            let currentDate = Date()
+            let entryDate = Calendar.current.date(byAdding: .minute, value: 1, to: currentDate)!
+            let entry = SimpleEntry(date: entryDate, temp: tempValue, configuration: configuration)
             entries.append(entry)
+            let timeline = Timeline(entries: entries, policy: .atEnd)
+            completion(timeline)
         }
+    }
 
-        let timeline = Timeline(entries: entries, policy: .atEnd)
-        completion(timeline)
+    func request(onSuccess: @escaping (Double) -> Void) {
+        let url = "https://api.nature.global/1/devices"
+         let headers: HTTPHeaders = ["accept": "application/json",
+                                     "Authorization": api_key]
+        AF.request(url, method: .get, encoding: URLEncoding.default, headers: headers).responseJSON { response in
+            guard let data = response.data else { return }
+            let response: [ResponseModel] = try! JSONDecoder().decode([ResponseModel].self, from: data)
+            print(response[0].newest_events.te.val)
+            onSuccess(response[0].newest_events.te.val)
+        }
     }
 }
 
 struct SimpleEntry: TimelineEntry {
     let date: Date
+    let temp: Double
     let configuration: ConfigurationIntent
 }
 
@@ -45,7 +58,8 @@ struct widget_natureEntryView : View {
     var entry: Provider.Entry
 
     var body: some View {
-        Text(entry.date, style: .time)
+        Text(String(entry.temp) + "℃")
+            .font(.title)
     }
 }
 
@@ -64,7 +78,7 @@ struct widget_nature: Widget {
 
 struct widget_nature_Previews: PreviewProvider {
     static var previews: some View {
-        widget_natureEntryView(entry: SimpleEntry(date: Date(), configuration: ConfigurationIntent()))
+        widget_natureEntryView(entry: SimpleEntry(date: Date(), temp: 20.2 ,configuration: ConfigurationIntent()))
             .previewContext(WidgetPreviewContext(family: .systemSmall))
     }
 }
