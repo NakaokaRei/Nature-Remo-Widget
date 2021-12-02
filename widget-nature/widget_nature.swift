@@ -22,15 +22,13 @@ struct Provider: IntentTimelineProvider {
 
     func getTimeline(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
         var entries: [SimpleEntry] = []
-
+        let refresh = Calendar.current.date(byAdding: .minute, value: 1, to: Date()) ?? Date()
         // Generate a timeline consisting of five entries an hour apart, starting from the current date.
         request() { tempValue in
             print(tempValue)
-            let currentDate = Date()
-            let entryDate = Calendar.current.date(byAdding: .minute, value: 1, to: currentDate)!
-            let entry = SimpleEntry(date: entryDate, temp: tempValue, configuration: configuration)
+            let entry = SimpleEntry(date: Date(), temp: tempValue, configuration: configuration)
             entries.append(entry)
-            let timeline = Timeline(entries: entries, policy: .atEnd)
+            let timeline = Timeline(entries: entries, policy: .after(refresh))
             completion(timeline)
         }
     }
