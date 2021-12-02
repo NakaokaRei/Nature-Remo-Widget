@@ -19,6 +19,8 @@
 		594760E12758AF0E0022C2A9 /* widget_nature.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 594760DD2758AF0D0022C2A9 /* widget_nature.intentdefinition */; };
 		594760E22758AF0E0022C2A9 /* widget_nature.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 594760DD2758AF0D0022C2A9 /* widget_nature.intentdefinition */; };
 		594760E52758AF0E0022C2A9 /* widget-natureExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 594760D42758AF0D0022C2A9 /* widget-natureExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		594760ED2758B8F50022C2A9 /* env.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594760EC2758B8F50022C2A9 /* env.swift */; };
+		594760EE2758B8F50022C2A9 /* env.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594760EC2758B8F50022C2A9 /* env.swift */; };
 		E724668EB4CB28E1E435667F /* Pods_Nature_Remo_Widget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8F9F574ED42B8986951568 /* Pods_Nature_Remo_Widget.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +63,7 @@
 		594760DD2758AF0D0022C2A9 /* widget_nature.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = widget_nature.intentdefinition; sourceTree = "<group>"; };
 		594760DE2758AF0E0022C2A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		594760E02758AF0E0022C2A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		594760EC2758B8F50022C2A9 /* env.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = env.swift; sourceTree = "<group>"; };
 		65D8F207B4AE4E7F2364FCCF /* Pods-widget-natureExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-widget-natureExtension.release.xcconfig"; path = "Target Support Files/Pods-widget-natureExtension/Pods-widget-natureExtension.release.xcconfig"; sourceTree = "<group>"; };
 		8556D0318BDDF5F1B86A05DE /* Pods_widget_natureExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_widget_natureExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA8F9F574ED42B8986951568 /* Pods_Nature_Remo_Widget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nature_Remo_Widget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,6 +95,7 @@
 		594760B62758AE620022C2A9 = {
 			isa = PBXGroup;
 			children = (
+				594760EF2758B8FC0022C2A9 /* Shared */,
 				594760C12758AE620022C2A9 /* Nature-Remo-Widget */,
 				594760DA2758AF0D0022C2A9 /* widget-nature */,
 				594760D52758AF0D0022C2A9 /* Frameworks */,
@@ -150,6 +154,14 @@
 			path = "widget-nature";
 			sourceTree = "<group>";
 		};
+		594760EF2758B8FC0022C2A9 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				594760EC2758B8F50022C2A9 /* env.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		AD22918FE99E2E6B6CA81FA5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,7 +170,6 @@
 				1D79FEC00DD728F362F5A6B5 /* Pods-widget-natureExtension.debug.xcconfig */,
 				65D8F207B4AE4E7F2364FCCF /* Pods-widget-natureExtension.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -331,6 +342,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				594760C52758AE630022C2A9 /* ContentView.swift in Sources */,
+				594760ED2758B8F50022C2A9 /* env.swift in Sources */,
 				594760E22758AF0E0022C2A9 /* widget_nature.intentdefinition in Sources */,
 				594760C32758AE630022C2A9 /* Nature_Remo_WidgetApp.swift in Sources */,
 			);
@@ -342,6 +354,7 @@
 			files = (
 				594760DC2758AF0D0022C2A9 /* widget_nature.swift in Sources */,
 				594760E12758AF0E0022C2A9 /* widget_nature.intentdefinition in Sources */,
+				594760EE2758B8F50022C2A9 /* env.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
