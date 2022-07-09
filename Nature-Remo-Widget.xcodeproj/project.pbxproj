@@ -19,10 +19,10 @@
 		594760E12758AF0E0022C2A9 /* widget_nature.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 594760DD2758AF0D0022C2A9 /* widget_nature.intentdefinition */; };
 		594760E22758AF0E0022C2A9 /* widget_nature.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 594760DD2758AF0D0022C2A9 /* widget_nature.intentdefinition */; };
 		594760E52758AF0E0022C2A9 /* widget-natureExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 594760D42758AF0D0022C2A9 /* widget-natureExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		594760ED2758B8F50022C2A9 /* env.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594760EC2758B8F50022C2A9 /* env.swift */; };
-		594760EE2758B8F50022C2A9 /* env.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594760EC2758B8F50022C2A9 /* env.swift */; };
 		599015042758C3DF00CAF61D /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599015032758C3DF00CAF61D /* ResponseModel.swift */; };
 		599015052758C3DF00CAF61D /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599015032758C3DF00CAF61D /* ResponseModel.swift */; };
+		5C49F218287998AA00A2BA35 /* env.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C49F217287998AA00A2BA35 /* env.swift */; };
+		5C49F219287998AA00A2BA35 /* env.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C49F217287998AA00A2BA35 /* env.swift */; };
 		E724668EB4CB28E1E435667F /* Pods_Nature_Remo_Widget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8F9F574ED42B8986951568 /* Pods_Nature_Remo_Widget.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,8 +65,8 @@
 		594760DD2758AF0D0022C2A9 /* widget_nature.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = widget_nature.intentdefinition; sourceTree = "<group>"; };
 		594760DE2758AF0E0022C2A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		594760E02758AF0E0022C2A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		594760EC2758B8F50022C2A9 /* env.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = env.swift; sourceTree = "<group>"; };
 		599015032758C3DF00CAF61D /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
+		5C49F217287998AA00A2BA35 /* env.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = env.swift; sourceTree = "<group>"; };
 		65D8F207B4AE4E7F2364FCCF /* Pods-widget-natureExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-widget-natureExtension.release.xcconfig"; path = "Target Support Files/Pods-widget-natureExtension/Pods-widget-natureExtension.release.xcconfig"; sourceTree = "<group>"; };
 		8556D0318BDDF5F1B86A05DE /* Pods_widget_natureExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_widget_natureExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA8F9F574ED42B8986951568 /* Pods_Nature_Remo_Widget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nature_Remo_Widget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -160,7 +160,7 @@
 		594760EF2758B8FC0022C2A9 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				594760EC2758B8F50022C2A9 /* env.swift */,
+				5C49F217287998AA00A2BA35 /* env.swift */,
 				599015032758C3DF00CAF61D /* ResponseModel.swift */,
 			);
 			path = Shared;
@@ -346,9 +346,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				594760C52758AE630022C2A9 /* ContentView.swift in Sources */,
-				594760ED2758B8F50022C2A9 /* env.swift in Sources */,
 				594760E22758AF0E0022C2A9 /* widget_nature.intentdefinition in Sources */,
 				599015042758C3DF00CAF61D /* ResponseModel.swift in Sources */,
+				5C49F218287998AA00A2BA35 /* env.swift in Sources */,
 				594760C32758AE630022C2A9 /* Nature_Remo_WidgetApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,9 +358,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				594760DC2758AF0D0022C2A9 /* widget_nature.swift in Sources */,
+				5C49F219287998AA00A2BA35 /* env.swift in Sources */,
 				594760E12758AF0E0022C2A9 /* widget_nature.intentdefinition in Sources */,
 				599015052758C3DF00CAF61D /* ResponseModel.swift in Sources */,
-				594760EE2758B8F50022C2A9 /* env.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,6 +509,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -540,6 +541,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -566,6 +568,7 @@
 				INFOPLIST_FILE = "widget-nature/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "widget-nature";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -594,6 +597,7 @@
 				INFOPLIST_FILE = "widget-nature/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "widget-nature";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

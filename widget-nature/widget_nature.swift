@@ -71,12 +71,18 @@ struct widget_nature: Widget {
         }
         .configurationDisplayName("My Widget")
         .description("This is an example widget.")
+        .supportedFamilies([.accessoryCircular, .accessoryRectangular, .accessoryInline, .systemMedium, .systemSmall])
     }
 }
 
 struct widget_nature_Previews: PreviewProvider {
     static var previews: some View {
-        widget_natureEntryView(entry: SimpleEntry(date: Date(), temp: 20.2 ,configuration: ConfigurationIntent()))
-            .previewContext(WidgetPreviewContext(family: .systemSmall))
+        Group {
+            widget_natureEntryView(entry: SimpleEntry(date: Date(), temp: 20.2 ,configuration: ConfigurationIntent()))
+                .previewContext(WidgetPreviewContext(family: .systemSmall))
+            
+            widget_natureEntryView(entry: SimpleEntry(date: Date(), temp: 20.2 ,configuration: ConfigurationIntent()))
+                .previewContext(WidgetPreviewContext(family: .accessoryRectangular))
+        }
     }
 }
