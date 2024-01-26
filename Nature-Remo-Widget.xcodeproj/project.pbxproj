@@ -426,7 +426,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -481,7 +481,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -501,7 +501,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Nature-Remo-Widget/Preview Content\"";
-				DEVELOPMENT_TEAM = ZY6FK4H66Q;
+				DEVELOPMENT_TEAM = 7ZJJ7KR6WA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -515,7 +515,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "jp.naist.is.rei.nakaoka.Nature-Remo-Widget";
+				PRODUCT_BUNDLE_IDENTIFIER = "rei.nakaoka.Nature-Remo-Widget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -533,7 +533,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Nature-Remo-Widget/Preview Content\"";
-				DEVELOPMENT_TEAM = ZY6FK4H66Q;
+				DEVELOPMENT_TEAM = 7ZJJ7KR6WA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -547,7 +547,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "jp.naist.is.rei.nakaoka.Nature-Remo-Widget";
+				PRODUCT_BUNDLE_IDENTIFIER = "rei.nakaoka.Nature-Remo-Widget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -563,7 +563,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ZY6FK4H66Q;
+				DEVELOPMENT_TEAM = 7ZJJ7KR6WA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "widget-nature/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "widget-nature";
@@ -575,7 +575,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "jp.naist.is.rei.nakaoka.Nature-Remo-Widget.widget-nature";
+				PRODUCT_BUNDLE_IDENTIFIER = "rei.nakaoka.Nature-Remo-Widget.widget-nature";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -592,7 +592,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ZY6FK4H66Q;
+				DEVELOPMENT_TEAM = 7ZJJ7KR6WA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "widget-nature/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "widget-nature";
@@ -604,7 +604,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "jp.naist.is.rei.nakaoka.Nature-Remo-Widget.widget-nature";
+				PRODUCT_BUNDLE_IDENTIFIER = "rei.nakaoka.Nature-Remo-Widget.widget-nature";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
